@@ -1,0 +1,503 @@
+/* STYLE GUIDE STYLING*/
+
+/* FONTS */
+@font-face {
+	font-family:"Gotham";
+	font-weight:100;
+	font-style:normal;
+	src: url('fonts/GothamRnd-Light.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:100;
+	font-style:italic;
+	src: url('fonts/GothamRnd-LightIta.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:300;
+	font-style:normal;
+	src: url('fonts/GothamRnd-Book.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:300;
+	font-style:italic;
+	src: url('fonts/GothamRnd-BookIta.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:500;
+	font-style:normal;
+	src: url('fonts/GothamRnd-Medium.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:500;
+	font-style:italic;
+	src: url('fonts/GothamRnd-Bold.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:700;
+	font-style:normal;
+	src: url('fonts/GothamRnd-BoldIta.otf');
+}
+
+@font-face {
+	font-family:"Gotham";
+	font-weight:700;
+	font-style:italic;
+	src: url('fonts/GothamRnd-MedIta.otf');
+}
+
+
+@font-face {
+	font-family:"BemboMTPro";
+	font-weight:300;
+	font-style:normal;
+	src: url('fonts/BemboMTPro-Regular.otf');
+}
+
+@font-face {
+	font-family:"BemboMTPro";
+	font-weight:300;
+	font-style:italic;
+	src: url('fonts/BemboMTPro-Italic.otf'); 
+}
+
+/* GENERAL TYPE STYLING */ 
+body{
+	font-family: 'Gotham', sans-serif;
+  	font-size: 14px;
+  	font-weight: 100;
+  	padding:0;
+  	margin: 0;
+  	color: black;
+}
+
+.home-quote p{
+	font-family: 'BemboMTPro', serif;
+  	font-size: 1.5em; /* 21 px*/
+  	font-weight: 500;
+  	font-style: italic;
+  	letter-spacing: 0.05em;
+  	padding:1.5em 1.5em 1.3em 1.5em;
+  	margin: 0;
+  	color: #9b8696;
+}
+
+.home-quote strong{
+	color:#632c52;
+}
+
+h1{
+	font-weight: 500;
+	font-size: 2em; /* 28 px */
+	color: #9b4a51;
+	letter-spacing: 0.08em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+h2{
+	font-weight: 100;
+	font-style: italic;
+	font-size: 1.142845714em; /* 16 px */
+	text-align: center;
+	color:#9b8696;
+}
+
+
+h3{
+	font-weight: 100;
+	font-style: italic;
+	font-size: 0.85714286em; /* 12 px */
+	text-align: center;
+	color:#9b8696;
+}
+
+p{
+	font-family: 'BemboMTPro', serif;
+  	font-size: 1.14285714em; /* 16 px*/
+  	font-weight: 300;
+  	line-height: 1.5em;
+}
+
+.intro-info p, .about-me-content p, .project-details-content p{
+	  		text-align: justify;
+}
+
+.gray-container a{
+	text-decoration: none;
+	font-style: italic;
+	color:#9b4a51;
+}
+
+
+
+
+/* NAVIGATION STYLING*/
+nav{
+	padding:1.7em 1em;
+}
+
+nav a{
+	font-size: 1.14285714em; /* 16 px */
+	text-align: center;
+	text-decoration: none;
+	display:block;
+	letter-spacing: 0.15em;
+	width:100%;
+	color: black;
+	line-height:1.2em;
+}
+
+nav a:hover, nav a:focus {
+  color: #cecece;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.nav-items, .nav-items-active{
+	padding-top: 1em;
+}
+
+.nav-items-active{
+	border-bottom: 5px solid;
+	height:50px;
+	width:209px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo{
+	text-align: left;
+	margin-left:20%;
+	margin-bottom: 0.75em;
+}
+
+.logo img:hover, .logo img:focus, .social-media-icons img:hover, .social-media-icons img:focus{
+	opacity: 0.35;
+	-webkit-transition: opacity 0.3s ease-out;
+  	transition: opacity 0.3s ease-out;
+}
+
+
+/* LISTING PAGE: IMAGE STYLING */
+.project-list img, .me img{
+  width:100%;
+  height:auto;
+  float:left;
+  clear:both;
+}
+
+.project-list img:hover, .project-list img:focus{
+	opacity:0.5;
+	-webkit-transition: opacity 0.5s ease-out;
+  	transition: opacity 0.5s ease-out;
+}
+
+
+.category-content { /* category tabs*/
+	width:160px;
+	position: absolute;
+    background-color:black;
+    padding:0.1em 0.75em 0.1 0em;
+    margin-left:-4.7em;
+    margin-top: 12%;
+    opacity: 0.5;
+    visibility: hidden; /*category tabs are hidden until a smaller screen size*/
+
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+}
+
+.category-content h2{
+	color:white;
+	font-size: 0.71428571em; /* 10px */
+	letter-spacing: 0.2em;
+}
+
+/* LISTING PAGE: HOVER*/
+
+.image-overlay{
+  background: #ddd;
+  float: left;
+  height: auto;
+  position: relative;
+  width: 100%;
+  transition: background 0.3s ease-out;
+  visibility: visible;
+}
+.image-overlay p{
+  color: white;
+  font-size: 2em; /* 28 px*/
+  opacity: 0;
+  text-align: center;
+  width:100%;
+  position: absolute;
+  top: 33%;
+  visibility: visible;
+  letter-spacing: 0.1em;
+}
+
+.image-overlay h2{
+  color:white;
+  font-size: 0.78571429em; /* 11px */
+  letter-spacing: 0.2em;
+  opacity: 0;
+  text-align: center;
+  width:100%;
+  position: absolute;
+  top: 52%;
+  visibility: visible;
+}
+
+.image-overlay img{
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+  visibility: visible;
+}
+.image-overlay:hover img{
+  opacity: 0.2;
+  visibility: visible;
+}
+
+.image-overlay:hover p, .image-overlay:hover h2{
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  visibility: visible;
+}
+.image-overlay:hover{
+  background: black;
+  opacity: 1;
+  visibility: visible; /* hover info is initially visible*/
+}
+
+
+
+/* ABOUT ME STYLING*/
+
+.gray-container, .gray-container-2{
+	display: inline-block;
+	background-color:#f7f6f6; 
+	padding:4em 0 4em 0;
+	width:100%;
+}
+
+.gray-container-3{
+	display: inline-block;
+	background-color:#e8e8e8; 
+	padding:4em 0 4em 0;
+	width:100%;
+}
+
+.competency-text p{
+	font-family: 'Gotham', sans-serif;
+	font-weight:100;
+  	font-size: 0.78571429em; /* 11 px */
+}
+
+.competency-image{
+	display: inline-block;
+	margin-top:1.5em; 
+}
+
+.competency-content img{
+	display: block;
+	height:76px;
+	width:76px;
+}
+
+.me .competency-icon-list{
+	padding-left: 8%;
+	padding-right: 8%;
+	margin-top:3em;
+}
+
+.about-me-content, .project-details-content{
+	width:85%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+.about-me-content h2, .project-details-content h2{
+	margin-bottom: 1.5em;
+	line-height: 1.5em;
+}
+
+
+/* PROJECT DETAIL STYLING*/
+
+.maroon-container{
+	display: inline-block;
+	background-color:#9b4a51; 
+	padding:4em 0 4em 0;
+	width:100%;
+}
+
+.project-description .intro-info{
+	background-color:white; 
+	padding:3em 1em 13em 1em;
+	width:85%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.intro-info-text p{
+	margin-top: 3em;
+	width:65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro-info-image{
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.intro-info-image img{
+	width:100%;
+	height:auto;
+	margin-bottom: 0;
+	margin-top: 2.5em;
+}
+
+
+.project-description .competency-icon-list{
+	padding-left: 18%;
+	padding-right: 18%;
+	margin-top:2em;
+}
+
+.competency-content p{
+	margin-top:1em;
+	text-align: center;
+}
+
+
+
+.white-container{
+	display: inline-block;
+	background-color:white; 
+	padding:4em 0 4em 0;
+	width:100%;
+}
+
+.project-details-content img{
+	width:95%;
+	height:auto;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+/* BUTTONS */
+
+a.button{
+  display: inline-block;
+  padding: 0.9em 0.85em 0.7em 0.85em;
+  margin:1em 0.2em 0 0.2em;
+  font-family: "Gotham", sans-serif;
+  font-weight: 100;
+  font-size:1em;
+  color:#b2646e;
+  box-shadow: 0 0 5px gray;
+  background-color: white;
+  border: 1.5px solid #f5f5f5;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+
+}
+
+
+a.round-button {
+  font-family: "Gotham", sans-serif;
+  font-weight: 100;
+  font-size:2em;
+  color:white;
+  box-shadow: 0 0 5px gray;
+  background-color: #b2646e;
+  border: 1.5px solid #f5f5f5;
+  margin: 1em 0 0 1em;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  line-height:50px;
+  border-radius: 50%;
+  text-align:center;
+  text-decoration:none;
+  opacity: 0.8;
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+
+a.button:hover,  a.button:focus {
+  background-color: #6d0612;
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
+}
+
+a.round-button:hover,  a.round-button:focus {
+  background-color: #6d0612;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
+}
+
+.related-projects h1 {
+
+	width:122px;
+	display: inline-block;
+	font-family: "Gotham", sans-serif;
+	font-size:1em;
+	font-weight: 100;
+	margin-right: -1em;
+	margin-left: -1em;
+	color:black;
+	visibility: visible;
+}
+
+/* FOOTER STYLING */
+
+.footer img {
+	margin-top: 5em;
+}
+
+.footer p{
+	font-family: "Gotham", sans-serif;
+	letter-spacing: 0.1em;
+	color: #cecece;
+}
+
+.social-media-icons{
+	margin-bottom: 4em;
+}
+
+.social-media-icons img{
+	margin-top: 2em;
+	margin-right: 0.55em;
+}
+
+
+

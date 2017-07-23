@@ -1,0 +1,183 @@
+/*grid stylesheet*/
+
+*,*::after,*::before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+[class^='col-'] {/*anything with col will take on these properties*/
+	float:left;
+	padding:0;
+	text-align:center;
+}
+.grid{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-4of10{  /* columns used for nav bar*/
+	width:25%;
+}
+
+
+.col-10of10{  /* columns used for project display on home page*/
+	width:100%;
+}
+
+.col-5of10{  /* columns used for project display on home page*/
+	width:50%;
+}
+
+
+.col-1of4{
+	width:25%;
+}
+
+
+@media (max-width:68em){ /*inspect element says 74em*/
+	.category-content {
+    	visibility: visible!important; /* category tabs are now visible*/
+	}
+
+	.image-overlay:hover p, .image-overlay:hover h2{
+  		visibility: hidden!important; /* at this screensize, hover info is hidden*/
+	}
+
+}
+
+
+
+@media (max-width:58em){ /* at 58 em, the columns should expand to 100% and take up whole screen*/
+	.col-4of10{
+		width:100%;
+		margin-bottom: 0.75em!important;
+	}
+
+	.gray-container .col-5of10{ /* about me columns*/
+		width: 100%;
+	}
+
+	.about-me-content{
+		margin-top: 8em!important;
+	}
+
+
+	.logo {
+		text-align: center !important;
+		margin-left: 0 !important;
+		margin-bottom: -2em!important;
+	}
+
+	nav {
+		margin-bottom: 15em!important;
+	}
+
+	.intro-info-text p{
+		width:90%!important;
+	}
+
+
+	.project-description .competency-icon-list{ /* project intro info media*/
+		padding: 0!important;
+		margin-top:2em;
+	}
+
+	.project-description.competency-icon-list img {
+		width: 90px!important;
+		height: 90px!important;
+	}
+
+	.intro-info-text p{
+		margin-top: 1.5em!important;
+	}
+
+	/*.home-quote p{
+		font-size: 1.28571429em !important;
+	}
+
+
+	project-description p{ project intro info media
+		width:90%!important;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+
+}
+
+@media (max-width:48em){ /* at 48 em, the columns should expand to 100% and take up whole screen*/
+	.col-5of10{
+		  width:100%;
+		  height:auto;
+	}
+
+	.category-content {
+    margin-top: 21.6%!important; /*category tab margin readjustment*/
+	}
+
+	.project-details-content img, .intro-info-image{
+		width:100%!important;
+		margin-bottom: 2.2em!important;
+		margin-top: 1.2em!important;
+	}
+
+}
+
+@media (max-width: 42em){
+	.col-1of4{
+		width:50%;
+	}
+	.project-description .intro-info{ /* project intro info media*/
+		padding:2em 1em 25em 1em!important;
+	}
+}
+
+
+
+@media (max-width:30em){
+
+
+	.home-quote p{
+  		font-size: 1.28571429em!important; /* 18 px*/
+	}
+
+	.competency-icon-list img {
+		width: 90px!important;
+		height: 90px!important;
+	}
+
+
+	.maroon-container h2{
+		font-size: 0.85714286em!important; /* 12 px */
+	}
+
+	.project-description .intro-info{ /* project intro info media*/
+		width:95%!important;
+	}
+
+	.related-projects h1 {
+		width:0px!important; /* fixes weird glitch where buttons arent centered*/
+		visibility: hidden!important;/* related project title disappears */
+	}
+
+}
+
+
+
+
+
+
+
+
+.grid{
+	/*include these 3 codes in ur css as a safety mechanism*/
+	content: "";
+	display:block;
+	clear:both;
+}
+
+
+
+
